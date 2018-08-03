@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 
 import Auxillary from '../../higherOrderComponents/Auxillary';
 
-class LandingPage extends Component {
+class Gallery extends Component {
     render() {
         return (
             <Auxillary>
@@ -13,4 +13,4 @@ class LandingPage extends Component {
     }
 }
 
-export default LandingPage;
+export default Gallery;
