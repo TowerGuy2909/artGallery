@@ -1,14 +1,31 @@
-import React from 'react';
+import React, {Component} from 'react';
+import {Route, Switch, Link, BrowserRouter} from 'react-router-dom';
 
-import Auxillary from '../../higherOrderComponents/Auxillary';
+import LandingPage from '../LandingPage/LandingPage';
+import About from '../About/About';
+import Gallery from '../Gallery/Gallery';
+import Contact from '../Contact/Contact';
+import Purchase from '../Purchase/Purchase';
+// import Auxillary from '../../higherOrderComponents/Auxillary';
+import Toolbar from '../Toolbar/Toolbar';
 
-const layout = ( props ) => (
-    <Auxillary>
-        <div>Toolbar, SideDrawer, Backdrop</div>
-        <main>
-            {props.children}
-        </main>
-    </Auxillary>
-);
+class Layout extends Component {
+    render () {
+        return(
+            <BrowserRouter>
+            <div>
+                <Toolbar />, SideDrawer, Backdrop
+                    <Switch>
+                        <Route exact path='/'  component={LandingPage} />
+                        <Route exact path='/purchase'  component={Purchase} />
+                        <Route  path='/contact' exact component={Contact} />
+                        <Route  path='/gallery' exact component={Gallery} />
+                        <Route exact path='/about'  component={About} />
+                    </Switch>
+                    </div>
+            </BrowserRouter>
+        )
+    }
+}
 
-export default layout;
+export default Layout;
