@@ -1,4 +1,4 @@
-import Reach, {Component} from 'react';
+import React, {Component} from 'react';
 
 import Auxillary from '../../higherOrderComponents/Auxillary';
 
