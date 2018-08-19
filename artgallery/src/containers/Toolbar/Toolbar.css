@@ -1,0 +1,22 @@
+.Toolbar {
+    text-decoration: none;
+    height: 56px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #097067;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20%;
+    box-sizing: border-box;
+    z-index: 90;
+    font-family: 'Lobster', cursive;
+    list-style-type: none;
+    color: white;
+   
+}
+
+/* font-family: 'Lobster', cursive;
+font-family: 'Raleway', sans-serif; */
