@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Route, Switch, Link, BrowserRouter} from 'react-router-dom';
+import {Route, Switch} from 'react-router-dom';
 
 import LandingPage from '../LandingPage/LandingPage';
 import About from '../About/About';
@@ -12,7 +12,6 @@ import Toolbar from '../Toolbar/Toolbar';
 class Layout extends Component {
     render () {
         return(
-            <BrowserRouter>
             <div>
                 <Toolbar />, SideDrawer, Backdrop
                     <Switch>
@@ -23,7 +22,6 @@ class Layout extends Component {
                         <Route exact path='/about'  component={About} />
                     </Switch>
                     </div>
-            </BrowserRouter>
         )
     }
 }
