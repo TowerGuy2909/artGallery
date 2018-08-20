@@ -8,6 +8,7 @@ class Toolbar extends Component {
         return (
             <Auxillary>
                 <ul className={classes.Toolbar}>
+                    <div className={classes.Header}>Midnight Musing</div>
                     <li><Link to={'/'} style={{ textDecoration: 'none', color: 'white' }}>Home</Link></li>
                     <li><Link to={'/about'} style={{ textDecoration: 'none', color: 'white' }}>About</Link></li>
                     <li><Link to={'/gallery'} style={{ textDecoration: 'none', color: 'white' }}>Gallery</Link></li>

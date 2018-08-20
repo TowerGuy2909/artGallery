@@ -7,9 +7,8 @@ class LandingPage extends Component {
     render() {
         return (
             <Auxillary className={classes.Landing}>
-                <div className={classes.Header}>Jeff's Gallery</div>
-                <div>Purpose</div>
-                <div>image</div>
+                <div className={classes.Image} >IMAGE</div>
+                
             </Auxillary>
         );
     }

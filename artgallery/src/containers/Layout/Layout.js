@@ -13,7 +13,7 @@ class Layout extends Component {
     render () {
         return(
             <div>
-                <Toolbar />, SideDrawer, Backdrop
+                <Toolbar />
                 <Switch>
                     <Route exact path='/'  component={LandingPage} />
                     <Route exact path='/purchase'  component={Purchase} />
