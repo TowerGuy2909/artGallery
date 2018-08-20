@@ -8,11 +8,11 @@ class Toolbar extends Component {
         return (
             <Auxillary>
                 <ul className={classes.Toolbar}>
-                    <li><Link to={'/'}>Home</Link></li>
-                    <li><Link to={'/about'}>About</Link></li>
-                    <li><Link to={'/gallery'}>Gallery</Link></li>
-                    <li><Link to={'/contact'}>Contact</Link></li>
-                    <li><Link to={'/purchase'}>Purchase</Link></li>
+                    <li><Link to={'/'} style={{ textDecoration: 'none', color: 'white' }}>Home</Link></li>
+                    <li><Link to={'/about'} style={{ textDecoration: 'none', color: 'white' }}>About</Link></li>
+                    <li><Link to={'/gallery'} style={{ textDecoration: 'none', color: 'white' }}>Gallery</Link></li>
+                    <li><Link to={'/contact'} style={{ textDecoration: 'none', color: 'white' }}>Contact</Link></li>
+                    <li><Link to={'/purchase'} style={{ textDecoration: 'none', color: 'white' }}>Purchase</Link></li>
                 </ul>
             </Auxillary>
         );

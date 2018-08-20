@@ -1,11 +1,11 @@
 .Toolbar {
-    text-decoration: none;
+    
     height: 56px;
     width: 100%;
     position: fixed;
     top: 0;
     left: 0;
-    background-color: #097067;
+    background-color: #096470;
     display: inline-flex;
     justify-content: space-between;
     align-items: center;
@@ -16,6 +16,10 @@
     list-style-type: none;
     color: white;
    
+}
+
+.Link {
+    text-decoration: 'none';
 }
 
 /* font-family: 'Lobster', cursive;

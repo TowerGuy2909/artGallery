@@ -14,14 +14,14 @@ class Layout extends Component {
         return(
             <div>
                 <Toolbar />, SideDrawer, Backdrop
-                    <Switch>
-                        <Route exact path='/'  component={LandingPage} />
-                        <Route exact path='/purchase'  component={Purchase} />
-                        <Route  path='/contact' exact component={Contact} />
-                        <Route  path='/gallery' exact component={Gallery} />
-                        <Route exact path='/about'  component={About} />
-                    </Switch>
-                    </div>
+                <Switch>
+                    <Route exact path='/'  component={LandingPage} />
+                    <Route exact path='/purchase'  component={Purchase} />
+                    <Route  path='/contact' exact component={Contact} />
+                    <Route  path='/gallery' exact component={Gallery} />
+                    <Route exact path='/about'  component={About} />
+                </Switch>
+            </div>
         )
     }
 }
