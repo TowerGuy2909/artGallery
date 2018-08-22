@@ -6,8 +6,7 @@ import About from '../About/About';
 import Gallery from '../Gallery/Gallery';
 import Contact from '../Contact/Contact';
 import Purchase from '../Purchase/Purchase';
-// import Auxillary from '../../higherOrderComponents/Auxillary';
-import Toolbar from '../Toolbar/Toolbar';
+import Toolbar from '../../components/Navigation/Toolbar/Toolbar';
 
 class Layout extends Component {
     render () {
