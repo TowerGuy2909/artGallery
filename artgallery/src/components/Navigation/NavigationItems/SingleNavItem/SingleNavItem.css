@@ -7,14 +7,5 @@
     text-decoration: none;
     /* color: white;  */
     list-style-type: none;
-}
-
-.SingleNavItem {
-    /* color: white; */
-    text-decoration: none;
-    height: 100%;
-    padding: 16px 10px;
-    border-bottom: 4px solid transparent;
-    box-sizing: border-box;
-    display: block;
+    justify-content: space-between;
 }

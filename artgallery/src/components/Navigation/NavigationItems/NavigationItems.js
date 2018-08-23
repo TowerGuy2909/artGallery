@@ -5,7 +5,7 @@ import SingleNavItem from './SingleNavItem/SingleNavItem';
 
 const navigationItems = () => (
     <ul className={classes.NavigationItems}>
-        <div className={classes.Logo}>Midnight Musing</div>
+        <div className={classes.Logo}>Midnight Musing</div> 
         <SingleNavItem link='/'>Home</SingleNavItem>
         <SingleNavItem link='/about'>About</SingleNavItem>
         <SingleNavItem link='/gallery'>Gallery</SingleNavItem>
