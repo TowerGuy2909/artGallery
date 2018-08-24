@@ -7,12 +7,14 @@ import Gallery from '../Gallery/Gallery';
 import Contact from '../Contact/Contact';
 import Purchase from '../Purchase/Purchase';
 import Toolbar from '../../components/Navigation/Toolbar/Toolbar';
+import MobileMenu from '../../components/Navigation/MobileMenu/MobileMenu';
 
 class Layout extends Component {
     render () {
         return(
             <div>
                 <Toolbar />
+                <MobileMenu />
                 <Switch>
                     <Route exact path='/'  component={LandingPage} />
                     <Route exact path='/purchase'  component={Purchase} />
