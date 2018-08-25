@@ -1,11 +1,23 @@
 .SingleNavItem { 
-    margin: 0;
+    margin: 20px 0;
     box-sizing: border-box;
-    display: flex;
+    display: block;
     height: 100%;
-    align-items: center;
     text-decoration: none;
-    /* color: white;  */
     list-style-type: none;
-    justify-content: space-between;
+}
+
+@media (min-width: 500px) {
+    .SingleNavItem { 
+        margin: 0;
+        box-sizing: border-box;
+        display: flex;
+        height: 100%;
+        align-items: center;
+        text-decoration: none;
+        /* color: white;  */
+        list-style-type: none;
+        
+        width: auto;
+    }
 }
