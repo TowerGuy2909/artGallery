@@ -2,14 +2,23 @@ import React from 'react';
 
 import NavigationItems from '../NavigationItems/NavigationItems';
 import classes from './MobileMenu.css';
+import Backdrop from '../../UserInterface/Backdrop/Backdrop';
+import Auxillary from '../../../higherOrderComponents/Auxillary';
 
 const mobileMenu = (props) => {
+    let attachedClasses = [classes.MobileMenu, classes.Close];
+    if (props.open) {
+        attachedClasses = [classes.MobileMenu, classes.Open];
+    }
     return(
-        <div className={classes.MobileMenu}>
-            <nav>
-                <NavigationItems />
-            </nav>
-        </div>
+        <Auxillary>
+            <Backdrop show={props.open} clicked={props.close}/>
+            <div className={attachedClasses.join(' ')}>
+                <nav>
+                    <NavigationItems />
+                </nav>
+            </div>
+        </Auxillary>
     );
 };
 
