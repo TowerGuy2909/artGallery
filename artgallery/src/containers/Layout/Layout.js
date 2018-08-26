@@ -8,13 +8,21 @@ import Contact from '../Contact/Contact';
 import Purchase from '../Purchase/Purchase';
 import Toolbar from '../../components/Navigation/Toolbar/Toolbar';
 import MobileMenu from '../../components/Navigation/MobileMenu/MobileMenu';
+import Auxillary from '../../higherOrderComponents/Auxillary';
 
 class Layout extends Component {
+    state = {
+        showMobileMenu: true
+    }
+ 
+    mobileMenuCloseHandler = () => {
+        this.setState({showMobileMenu: false})
+    }
     render () {
         return(
-            <div>
+            <Auxillary>
                 <Toolbar />
-                <MobileMenu />
+                <MobileMenu open={this.state.showMobileMenu} close={this.mobileMenuCloseHandler} />
                 <Switch>
                     <Route exact path='/'  component={LandingPage} />
                     <Route exact path='/purchase'  component={Purchase} />
@@ -22,7 +30,7 @@ class Layout extends Component {
                     <Route  path='/gallery' exact component={Gallery} />
                     <Route exact path='/about'  component={About} />
                 </Switch>
-            </div>
+            </Auxillary>
         )
     }
 }
