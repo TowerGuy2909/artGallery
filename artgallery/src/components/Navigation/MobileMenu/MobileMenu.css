@@ -17,6 +17,12 @@
     .MobileMenu {
         display: none;
     }
+
+    .Logo {
+        font-family: 'Lobster', cursive;
+        color: gold;
+        font-size: 35px;
+    }
 }
 
 .Open {

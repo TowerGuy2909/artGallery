@@ -12,12 +12,19 @@ import Auxillary from '../../higherOrderComponents/Auxillary';
 
 class Layout extends Component {
     state = {
-        showMobileMenu: true
+        showMobileMenu: false
     }
  
     mobileMenuCloseHandler = () => {
-        this.setState({showMobileMenu: false})
+        this.setState({showMobileMenu: false});
     }
+
+    mobileToggleHandler = () => {
+        this.setState((prevState) => {
+           return {showMobileMenu: !prevState.showMobileMenu}
+        });
+    }
+
     render () {
         return(
             <Auxillary>

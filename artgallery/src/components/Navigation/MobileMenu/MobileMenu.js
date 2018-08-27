@@ -14,6 +14,9 @@ const mobileMenu = (props) => {
         <Auxillary>
             <Backdrop show={props.open} clicked={props.close}/>
             <div className={attachedClasses.join(' ')}>
+                <div className={classes.Logo} onClick={props.clicked}>
+                    Midnight Musing
+                </div> 
                 <nav>
                     <NavigationItems />
                 </nav>
