@@ -28,7 +28,7 @@ class Layout extends Component {
     render () {
         return(
             <Auxillary>
-                <Toolbar />
+                <Toolbar mobileMenuClicked={this.mobileToggleHandler}/>
                 <MobileMenu open={this.state.showMobileMenu} close={this.mobileMenuCloseHandler} />
                 <Switch>
                     <Route exact path='/'  component={LandingPage} />
